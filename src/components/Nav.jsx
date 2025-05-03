@@ -4,7 +4,7 @@ import logo from "../img/logo.png";
 function Nav({ user, setUser }) {
   const handleLogout = () => {
     sessionStorage.clear();
-    setUser("");
+    setUser({ email: "", password: "" });
   };
   return (
     <nav className="navbar navbar-expand-md navbar-light">

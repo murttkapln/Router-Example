@@ -17,8 +17,9 @@ import { useState } from "react";
 
 const AppRouter = () => {
   const [user, setUser] = useState(
-    JSON.parse(sessionStorage.getItem("user")) || false
+    JSON.parse(sessionStorage.getItem("user")) || {email:"",passwordd:""}
   );
+  console.log(user);
   return (
     <div>
       <Nav user={user} setuser={setUser} />

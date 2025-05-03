@@ -15,7 +15,7 @@ const People = () => {
   useEffect(() => {
     getPeople();
   }, []);
-  console.log(setPeople);
+  // console.log(setPeople);
 
   return (
     <div className=" container  bg-body-tertiary text-center mt-4">
